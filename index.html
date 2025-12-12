@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>John Steven M. Almonte</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <!-- REGISTER AREA -->
+      <div id="regArea">
+        <h1 class="header">✨ REGISTER HERE ✨</h1>
+        <form id="regForm" autocomplete="off">
+          <label>Username</label>
+          <input id="regUser" required minlength="3" />
+
+          <label>Password</label>
+          <input id="regPass" type="password" required minlength="6" />
+
+          <button type="submit">Create account</button>
+        </form>
+        <div id="regMsg" class="muted"></div>
+      </div>
+
+      <!-- LOGIN AREA -->
+      <div id="loginArea" class="hidden">
+        <h1 class="header">✨ LOGIN YOUR USERNAME AND PASSWORD ✨</h1>
+        <form id="loginForm" autocomplete="off">
+          <label>Username</label>
+          <input id="loginUser" required />
+
+          <label>Password</label>
+          <input id="loginPass" type="password" required />
+
+          <button type="submit">Login</button>
+        </form>
+        <div id="loginMsg" class="muted"></div>
+      </div>
+
+      <!-- INFORMATION AREA -->
+      <div id="infoArea" class="hidden info" aria-live="polite">
+        <h2 class="header">✨MY INFORMATION✨</h2>
+        <ul>
+          <h4 style="color: black">Username: <span id="showUser"></span></h4>
+
+          <h4 style="color: black">Password: <span id="showPass"></span></h4>
+   <li><p><strong style="color:red;">Name:</strong> John Steven M. Almonte</p></li>
+          <li><p><strong style="color:red;">Age:</strong> 20</p></li>
+          <li>
+          <strong style="color:red;">Address:</strong> Brgy Tolosa, Cabadbaran City, Agusan del
+            Norte</p></li>
+          <li><p><strong style="color:red;">Birthdate:</strong> January 12, 2005</p></li>
+          <li><p><strong style="color:red;">Facebook:</strong> JohnSteven Almonte</p></li>
+
+          <li><p><strong style="color:red;">Hobbies:</strong></p></li>
+          <ul class="hobbies">
+            <h3><li>Basketball</li></h3>
+            <h3><li>Drawing</li></h3>
+            <h3><li>Playing Online Games</li></h3>
+            <h3><li>Watching Movies</li></h3>
+            <h3><li>Bike</li></h3>
+            <h3><li>Jogging</li></h3>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
